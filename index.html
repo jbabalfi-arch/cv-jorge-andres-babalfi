@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jorge Andrés Babalfi - CV Interactivo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="profile-header">
+                <div class="photo-container"><img src="perfil.jpg" alt="Jorge Babalfi"></div>
+                <h1>Jorge Andrés Babalfi</h1>
+                <p class="tagline">Estratega en IA & Gestión Empresarial</p>
+            </div>
+            <nav class="nav-menu">
+                <button onclick="showTab('perfil')" class="nav-link active">Perfil</button>
+                <button onclick="showTab('experiencia')" class="nav-link">Experiencia Laboral</button>
+                <button onclick="showTab('academica')" class="nav-link">Formación Académica</button>
+                <button onclick="showTab('cursos')" class="nav-link">Cursos y Certificaciones</button>
+            </nav>
+            <div class="contact-footer">
+                <p>jbabalfi@gmail.com</p>
+                <p>+54 9 351 5408795</p>
+                <p>Córdoba, Argentina</p>
+            </div>
+        </aside>
+
+        <main class="content-area">
+            <section id="perfil" class="tab-content active">
+                <h2>Mi Perfil</h2>
+                <div class="card">
+                    <p>Profesional multidisciplinario con más de 25 años de trayectoria liderando la intersección entre la tecnología de vanguardia y la gestión empresarial. Experto en la dirección de PyMEs y la fundación de startups tecnológicas, con una formación reciente en Inteligencia Artificial Avanzada (2026). Poseo una capacidad única para traducir necesidades técnicas complejas en soluciones comerciales rentables, potenciada por una formación como Coach Ontológico para liderar equipos de alto rendimiento y gestionar el cambio organizacional.</p>
+                </div>
+                <h3>Aptitudes</h3>
+                <div class="badges">
+                    <span>Proactividad Estratégica</span><span>Orientación a Resultados</span><span>Resiliencia Empresarial</span>
+                    <span>Visión Sistémica</span><span>Comunicación Asertiva</span><span>Gestión de la Incertidumbre</span>
+                </div>
+            </section>
+
+            <section id="experiencia" class="tab-content">
+                <h2>Experiencia Laboral</h2>
+                
+                <div class="item">
+                    <span class="date">Dic 2020 - Actualidad</span>
+                    <h3>Gerente Comercial y Marketing</h3>
+                    <p class="company">GRUPO PLENOS</p>
+                    <ul>
+                        <li>Coordinación y gestión Comercial</li>
+                        <li>Coordinación y gestión de Marketing</li>
+                        <li>Desarrollo de nuevos productos</li>
+                        <li>Desarrollo de nuevos mercados</li>
+                        <li>Gestión Tecnología de la empresa</li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <span class="date">Mayo 2013 - Actualidad</span>
+                    <h3>Vicepresidente / Vocal / Vocal Suplente</h3>
+                    <p class="company">CIDI (Cámara de Informática del Interior)</p>
+                </div>
+
+                <div class="item">
+                    <span class="date">Jul 2001 - Dic 2020</span>
+                    <h3>Socio Fundador y CEO</h3>
+                    <p class="company">HB SOLUCIONES</p>
+                    <ul>
+                        <li>CEO</li>
+                        <li>Coordinación y gestión Comercial</li>
+                        <li>Coordinación y gestión de Marketing</li>
+                        <li>Gestión de Compras</li>
+                        <li>Gestión Financiera</li>
+                        <li>Desarrollo de nuevos productos</li>
+                        <li>Desarrollo de nuevos mercados</li>
+                        <li>Gestión Tecnología de la empresa</li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <span class="date">Sep 2019 - Jun 2021</span>
+                    <h3>Socio Fundador y CEO</h3>
+                    <p class="company">ALAS MULTIESPACIO</p>
+                    <ul>
+                        <li>CEO</li>
+                        <li>Coordinación y gestión Comercial</li>
+                        <li>Gestión de Área de desarrollo personal</li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <span class="date">Ago 1999 - May 2002</span>
+                    <h3>Ingeniería de Clientes</h3>
+                    <p class="company">TELEFÓNICA DATA</p>
+                    <ul>
+                        <li>Desarrollo de Redes de Datos WAN nacional e internacional</li>
+                        <li>Dictado de seminarios técnicos</li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <span class="date">Feb 1994 - Jul 1999</span>
+                    <h3>Asistencia técnica y Ventas</h3>
+                    <p class="company">CABLEVISIÓN</p>
+                </div>
+
+                <div class="item">
+                    <span class="date">Jul 1993 - Ene 1994</span>
+                    <h3>Técnico Electrónico</h3>
+                    <p class="company">RGB ELECTRÓNICA</p>
+                </div>
+
+                <div class="item">
+                    <span class="date">Dic 1992 - Jun 1993</span>
+                    <h3>Técnico Electrónico</h3>
+                    <p class="company">STAK AUDIO</p>
+                </div>
+
+                <div class="item">
+                    <span class="date">Abr 1991 - Nov 1992</span>
+                    <h3>Ventas</h3>
+                    <p class="company">MARKETING GROUP</p>
+                </div>
+            </section>
+
+            <section id="academica" class="tab-content">
+                <h2>Formación Académica</h2>
+                <div class="item">
+                    <h3>Diplomatura en Automatización con IA</h3>
+                    <p>EGCI Escuela de Gerencia - Año 2026</p>
+                </div>
+                <div class="item">
+                    <h3>Coach Ontológico Profesional</h3>
+                    <p>Fundación Despegar - Año 2012</p>
+                </div>
+                <div class="item">
+                    <h3>Analista de Sistemas Informáticos</h3>
+                    <p>Universidad Blas Pascal - Año 2001</p>
+                </div>
+                <div class="item">
+                    <h3>Ingeniería Electrónica</h3>
+                    <p>Universidad Nacional de Córdoba (Cursado 1991-1996)</p>
+                </div>
+                <div class="item">
+                    <h3>Técnico en Electrónica Industrial</h3>
+                    <p>I.P.E.T. Nº 50 Emilio F. Olmos (1984-1990)</p>
+                </div>
+            </section>
+
+            <section id="cursos" class="tab-content">
+                <h2>Cursos y Certificaciones</h2>
+                <div class="course-grid">
+                    <div class="card">
+                        <h3>IA y Tecnología</h3>
+                        <ul>
+                            <li>Modelos de lenguaje LLM</li>
+                            <li>Desarrollo de Agentes</li>
+                            <li>Prompt Engineering</li>
+                            <li>Automatización de Workflows</li>
+                            <li>Seguridad de Redes (Cisco Systems y UTN)</li>
+                            <li>Oracle 9i (Oracle)</li>
+                            <li>Tecnologías de Acceso (POTS, ADSL, XDSL, X.25, FRAME RELAY, ISDN, ATM)</li>
+                            <li>Switching en Redes LAN (Lucent Technologies)</li>
+                            <li>Cableado Estructurado, Redes Inalámbricas (Lucent Technologies)</li>
+                            <li>Exchange '99 (Nortel Networks)</li>
+                            <li>Redes de Comunicación de Datos por Satélites (U. Politécnica de Madrid)</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Gestión y Otros</h3>
+                        <ul>
+                            <li>Seminario de Negociación Efectiva (Tec Consultora)</li>
+                            <li>Curso de Operación y Musicalización de Radio y TV (UBP)</li>
+                            <li>Licencia de Radioaficionado (CNT)</li>
+                            <li>Curso de Timonel (Prefectura Nacional año 2012)</li>
+                            <li>Catación y Degustación de Vinos (Bodegas Salentein año 2001)</li>
+                            <li>Liderazgo y Gestión del Cambio</li>
+                        </ul>
+                    </div>
+                </div>
+                <h3>Idiomas</h3>
+                <p>Español (Nativo) | Inglés (Medio) | Italiano (Medio) | Portugués (Básico)</p>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
