@@ -5,186 +5,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jorge Andrés Babalfi - CV Interactivo</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div class="app-container">
         <aside class="sidebar">
-            <div class="profile-header">
-                <div class="photo-container"><img src="perfil.jpg" alt="Jorge Babalfi"></div>
+            <div class="profile-section">
+                <div class="photo-box">
+                    <img src="perfil.jpeg" alt="Jorge Babalfi" onerror="this.src='https://via.placeholder.com/150?text=JB'">
+                </div>
                 <h1>Jorge Andrés Babalfi</h1>
                 <p class="tagline">Estratega en IA & Gestión Empresarial</p>
             </div>
             <nav class="nav-menu">
-                <button onclick="showTab('perfil')" class="nav-link active">Perfil</button>
-                <button onclick="showTab('experiencia')" class="nav-link">Experiencia Laboral</button>
-                <button onclick="showTab('academica')" class="nav-link">Formación Académica</button>
-                <button onclick="showTab('cursos')" class="nav-link">Cursos y Certificaciones</button>
+                <button onclick="showSection('perfil')" class="nav-btn active">Perfil</button>
+                <button onclick="showSection('experiencia')" class="nav-btn">Experiencia Laboral</button>
+                <button onclick="showSection('academica')" class="nav-btn">Formación Académica</button>
+                <button onclick="showSection('cursos')" class="nav-btn">Cursos y Certificaciones</button>
             </nav>
-            <div class="contact-footer">
+            <div class="sidebar-contact">
                 <p>jbabalfi@gmail.com</p>
                 <p>+54 9 351 5408795</p>
                 <p>Córdoba, Argentina</p>
             </div>
         </aside>
 
-        <main class="content-area">
-            <section id="perfil" class="tab-content active">
-                <h2>Mi Perfil</h2>
+        <main class="main-content">
+            <section id="perfil" class="content-section active">
+                <h2>Perfil Profesional</h2>
                 <div class="card">
-                    <p>Profesional multidisciplinario con más de 25 años de trayectoria liderando la intersección entre la tecnología de vanguardia y la gestión empresarial. Experto en la dirección de PyMEs y la fundación de startups tecnológicas, con una formación reciente en Inteligencia Artificial Avanzada (2026). Poseo una capacidad única para traducir necesidades técnicas complejas en soluciones comerciales rentables, potenciada por una formación como Coach Ontológico para liderar equipos de alto rendimiento y gestionar el cambio organizacional.</p>
-                </div>
-                <h3>Aptitudes</h3>
-                <div class="badges">
-                    <span>Proactividad Estratégica</span><span>Orientación a Resultados</span><span>Resiliencia Empresarial</span>
-                    <span>Visión Sistémica</span><span>Comunicación Asertiva</span><span>Gestión de la Incertidumbre</span>
+                    <p>Profesional multidisciplinario con más de 25 años de trayectoria liderando la intersección entre la tecnología de vanguardia y la gestión empresarial. Experto en la dirección de PyMEs y la fundación de startups tecnológicas, con una formación reciente en Inteligencia Artificial Avanzada (2026). Capacidad única para traducir necesidades técnicas complejas en soluciones comerciales rentables, potenciada por una formación como Coach Ontológico.</p>
                 </div>
             </section>
 
-            <section id="experiencia" class="tab-content">
-                <h2>Experiencia Laboral</h2>
+            <section id="experiencia" class="content-section">
+                <h2>Trayectoria Profesional</h2>
                 
-                <div class="item">
-                    <span class="date">Dic 2020 - Actualidad</span>
-                    <h3>Gerente Comercial y Marketing</h3>
+                <div class="exp-item">
+                    <div class="exp-header"><h3>Gerente Comercial y Marketing</h3><span>Dic 2020 - Actualidad</span></div>
                     <p class="company">GRUPO PLENOS</p>
                     <ul>
-                        <li>Coordinación y gestión Comercial</li>
-                        <li>Coordinación y gestión de Marketing</li>
-                        <li>Desarrollo de nuevos productos</li>
-                        <li>Desarrollo de nuevos mercados</li>
-                        <li>Gestión Tecnología de la empresa</li>
+                        <li>Coordinación y gestión Comercial / Marketing.</li>
+                        <li>Desarrollo de nuevos productos y mercados.</li>
+                        <li>Gestión Tecnología de la empresa.</li>
                     </ul>
                 </div>
 
-                <div class="item">
-                    <span class="date">Mayo 2013 - Actualidad</span>
-                    <h3>Vicepresidente / Vocal / Vocal Suplente</h3>
+                <div class="exp-item">
+                    <div class="exp-header"><h3>Vicepresidente / Vocal / Vocal Suplente</h3><span>Mayo 2013 - Actualidad</span></div>
                     <p class="company">CIDI (Cámara de Informática del Interior)</p>
                 </div>
 
-                <div class="item">
-                    <span class="date">Jul 2001 - Dic 2020</span>
-                    <h3>Socio Fundador y CEO</h3>
+                <div class="exp-item">
+                    <div class="exp-header"><h3>Socio Fundador y CEO</h3><span>Jul 2001 - Dic 2020</span></div>
                     <p class="company">HB SOLUCIONES</p>
                     <ul>
-                        <li>CEO</li>
-                        <li>Coordinación y gestión Comercial</li>
-                        <li>Coordinación y gestión de Marketing</li>
-                        <li>Gestión de Compras</li>
-                        <li>Gestión Financiera</li>
-                        <li>Desarrollo de nuevos productos</li>
-                        <li>Desarrollo de nuevos mercados</li>
-                        <li>Gestión Tecnología de la empresa</li>
+                        <li>CEO / Gestión de Compras / Gestión Financiera.</li>
+                        <li>Coordinación Comercial y de Marketing.</li>
+                        <li>Desarrollo de productos, mercados y tecnología.</li>
                     </ul>
                 </div>
 
-                <div class="item">
-                    <span class="date">Sep 2019 - Jun 2021</span>
-                    <h3>Socio Fundador y CEO</h3>
+                <div class="exp-item">
+                    <div class="exp-header"><h3>Socio Fundador y CEO</h3><span>Sep 2019 - Jun 2021</span></div>
                     <p class="company">ALAS MULTIESPACIO</p>
-                    <ul>
-                        <li>CEO</li>
-                        <li>Coordinación y gestión Comercial</li>
-                        <li>Gestión de Área de desarrollo personal</li>
-                    </ul>
                 </div>
 
-                <div class="item">
-                    <span class="date">Ago 1999 - May 2002</span>
-                    <h3>Ingeniería de Clientes</h3>
+                <div class="exp-item">
+                    <div class="exp-header"><h3>Ingeniería de Clientes</h3><span>Ago 1999 - May 2002</span></div>
                     <p class="company">TELEFÓNICA DATA</p>
                     <ul>
-                        <li>Desarrollo de Redes de Datos WAN nacional e internacional</li>
-                        <li>Dictado de seminarios técnicos</li>
+                        <li>Desarrollo de Redes de Datos WAN nacional e internacional.</li>
+                        <li>Dictado de seminarios técnicos.</li>
                     </ul>
                 </div>
 
-                <div class="item">
-                    <span class="date">Feb 1994 - Jul 1999</span>
-                    <h3>Asistencia técnica y Ventas</h3>
+                <div class="exp-item">
+                    <div class="exp-header"><h3>Asistencia técnica y Ventas</h3><span>Feb 1994 - Jul 1999</span></div>
                     <p class="company">CABLEVISIÓN</p>
                 </div>
 
-                <div class="item">
-                    <span class="date">Jul 1993 - Ene 1994</span>
-                    <h3>Técnico Electrónico</h3>
-                    <p class="company">RGB ELECTRÓNICA</p>
-                </div>
-
-                <div class="item">
-                    <span class="date">Dic 1992 - Jun 1993</span>
-                    <h3>Técnico Electrónico</h3>
-                    <p class="company">STAK AUDIO</p>
-                </div>
-
-                <div class="item">
-                    <span class="date">Abr 1991 - Nov 1992</span>
-                    <h3>Ventas</h3>
-                    <p class="company">MARKETING GROUP</p>
+                <div class="exp-item">
+                    <div class="exp-header"><h3>Técnico Electrónico</h3><span>1992 - 1994</span></div>
+                    <p class="company">RGB ELECTRÓNICA / STAK AUDIO</p>
                 </div>
             </section>
 
-            <section id="academica" class="tab-content">
+            <section id="academica" class="content-section">
                 <h2>Formación Académica</h2>
-                <div class="item">
-                    <h3>Diplomatura en Automatización con IA</h3>
-                    <p>EGCI Escuela de Gerencia - Año 2026</p>
-                </div>
-                <div class="item">
-                    <h3>Coach Ontológico Profesional</h3>
-                    <p>Fundación Despegar - Año 2012</p>
-                </div>
-                <div class="item">
-                    <h3>Analista de Sistemas Informáticos</h3>
-                    <p>Universidad Blas Pascal - Año 2001</p>
-                </div>
-                <div class="item">
-                    <h3>Ingeniería Electrónica</h3>
-                    <p>Universidad Nacional de Córdoba (Cursado 1991-1996)</p>
-                </div>
-                <div class="item">
-                    <h3>Técnico en Electrónica Industrial</h3>
-                    <p>I.P.E.T. Nº 50 Emilio F. Olmos (1984-1990)</p>
-                </div>
+                <div class="edu-item"><h3>Diplomatura en Automatización con IA</h3><p>EGCI Escuela de Gerencia (2026)</p></div>
+                <div class="edu-item"><h3>Coach Ontológico Profesional</h3><p>Fundación Despegar (2012)</p></div>
+                <div class="edu-item"><h3>Analista de Sistemas Informáticos</h3><p>Universidad Blas Pascal (2001)</p></div>
+                <div class="edu-item"><h3>Ingeniería Electrónica</h3><p>Universidad Nacional de Córdoba (Cursado 1991-1996)</p></div>
+                <div class="edu-item"><h3>Técnico en Electrónica Industrial</h3><p>I.P.E.T. Nº 50 Emilio F. Olmos (1984-1990)</p></div>
             </section>
 
-            <section id="cursos" class="tab-content">
-                <h2>Cursos y Certificaciones</h2>
-                <div class="course-grid">
-                    <div class="card">
-                        <h3>IA y Tecnología</h3>
-                        <ul>
-                            <li>Modelos de lenguaje LLM</li>
-                            <li>Desarrollo de Agentes</li>
-                            <li>Prompt Engineering</li>
-                            <li>Automatización de Workflows</li>
-                            <li>Seguridad de Redes (Cisco Systems y UTN)</li>
-                            <li>Oracle 9i (Oracle)</li>
-                            <li>Tecnologías de Acceso (POTS, ADSL, XDSL, X.25, FRAME RELAY, ISDN, ATM)</li>
-                            <li>Switching en Redes LAN (Lucent Technologies)</li>
-                            <li>Cableado Estructurado, Redes Inalámbricas (Lucent Technologies)</li>
-                            <li>Exchange '99 (Nortel Networks)</li>
-                            <li>Redes de Comunicación de Datos por Satélites (U. Politécnica de Madrid)</li>
-                        </ul>
-                    </div>
-                    <div class="card">
-                        <h3>Gestión y Otros</h3>
-                        <ul>
-                            <li>Seminario de Negociación Efectiva (Tec Consultora)</li>
-                            <li>Curso de Operación y Musicalización de Radio y TV (UBP)</li>
-                            <li>Licencia de Radioaficionado (CNT)</li>
-                            <li>Curso de Timonel (Prefectura Nacional año 2012)</li>
-                            <li>Catación y Degustación de Vinos (Bodegas Salentein año 2001)</li>
-                            <li>Liderazgo y Gestión del Cambio</li>
-                        </ul>
-                    </div>
+            <section id="cursos" class="content-section">
+                <h2>Cursos y Certificaciones Detalladas</h2>
+                <div class="course-list">
+                    <table>
+                        <thead>
+                            <tr><th>Curso / Certificación</th><th>Institución / Dictante</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>MODELOS DE LENGUAJE LLM / AGENTES / PROMPT ENGINEERING / WORKFLOWS</td><td>EGCI</td></tr>
+                            <tr><td>SEGURIDAD DE REDES</td><td>Cisco Systems y UTN</td></tr>
+                            <tr><td>ORACLE 9i</td><td>Oracle</td></tr>
+                            <tr><td>ATD Y SERVICIO DE GRUPO PRIVADO</td><td>Telefónica de Argentina</td></tr>
+                            <tr><td>SEGURIDAD E HIGIENE / REDES DE TELECOMUNICACIONES</td><td>Telefónica de Argentina</td></tr>
+                            <tr><td>TECNOLOGÍAS DE ACCESO (POTS, ASDL, XDSL, X.25, FRAME RELAY, ISDN, ATM)</td><td>Telefónica de Argentina</td></tr>
+                            <tr><td>SWITCHING EN REDES LAN</td><td>Lucent Technologies</td></tr>
+                            <tr><td>CABLEADO ESTRUCTURADO / REDES INALÁMBRICAS</td><td>Lucent Technologies</td></tr>
+                            <tr><td>REDES DE COMUNICACIÓN DE DATOS POR SATÉLITES</td><td>Universidad Politécnica de Madrid</td></tr>
+                            <tr><td>EXCHANGE '99</td><td>Nortel Networks</td></tr>
+                            <tr><td>SEMINARIO DE NEGOCIACIÓN EFECTIVA</td><td>Tec Consultora</td></tr>
+                            <tr><td>OPERACIÓN Y MUSICALIZACIÓN DE RADIO Y TV</td><td>Universidad Blas Pascal</td></tr>
+                            <tr><td>LICENCIA DE RADIOAFICIONADO</td><td>CNT (Comisión Nacional de Telecomunicaciones)</td></tr>
+                            <tr><td>CURSO DE TIMONEL</td><td>Prefectura Nacional (Año 2012)</td></tr>
+                            <tr><td>CATACIÓN Y DEGUSTACIÓN DE VINOS</td><td>Bodegas Salentein (Año 2001)</td></tr>
+                        </tbody>
+                    </table>
                 </div>
-                <h3>Idiomas</h3>
-                <p>Español (Nativo) | Inglés (Medio) | Italiano (Medio) | Portugués (Básico)</p>
             </section>
         </main>
     </div>
     <script src="script.js"></script>
 </body>
-</html>
+</html>>
